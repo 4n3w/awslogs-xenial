@@ -1,7 +1,6 @@
 ---
 blobstore:
-  provider: s3
+  provider: local
   options:
-    bucket_name: cloud-gov-release-blobstore
-    region: us-gov-west-1
+    blobstore_path: /tmp/awslogs-xenial
 final_name: awslogs-xenial

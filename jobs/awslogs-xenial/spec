@@ -2,7 +2,6 @@
 name: awslogs-xenial
 templates:
   bin/awslogsd.sh.erb: bin/awslogsd.sh
-  bin/awslogs-scanner.sh: bin/awslogs-scanner.sh
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
   bin/scanner-ctl: bin/scanner-ctl
@@ -24,6 +23,8 @@ properties:
     description: AWS Secret Access Key
   awslogs-xenial.region:
     description: AWS Region
+  awslogs-xenial.log_group_prefix:
+    description: AWS Log Group Prefix
   awslogs-xenial.http_proxy:
     default: ""
   awslogs-xenial.https_proxy:
